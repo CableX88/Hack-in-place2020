@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link href=CreateAccount.css rel="stylesheet" type="text/css" >
-</head>
+<link rel="stylesheet" href="CreateAccount.css" type="text/css" </link>
 <body>
 
-<h1>Create Your Account</h1>
-<br>
-
-<form>
-  <label for="fname">Full Name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="email">Email Address:</label><br>
-  <input type="text" id="email" name="email">
-  <label for="password">Password:</label><br>
-  <input type="text" id="password" name="password">
-</form>
-
-<p>Sign In</p>
-<p>Sign In With Google</p>
-<p>Sign In With Facebook</p>
+<div class="grid-container">
+  <div class="item1">
+    <h1 style="text-align:left">Create Your Account
+    </h1>
+  </div>
+  <div class="item2">
+    <div class="btn-group">
+      <form>
+        <label for="fname">Full Name</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="email">Email Address</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="password">Password</label><br>
+        <input type="text" id="password" name="password">
+        <br>
+      </form>
+      <button>Sign In</button>
+ <h2>OR</h2>
+    </div>
+    <div class="btn-group2">
+      <button >Sign In With Google</button><br>
+      </div>
+      <div class="btn-group3">
+      <button>Sign In With Facebook</button>
+    </div>
+  </div>
+</div>
 
 </body>
-
 </html>
