@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <html lang="en-us">
-<link rel="stylesheet" href="ConnectworkLogin.css"</link> <!-- Connects the css to this html file -->
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/ConnectworkLogin.css') }}"> <!-- Connects the css to this html file -->
 <link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet'> <!-- For the Google font "Flamenco" -->
 <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- For icons -->
 
@@ -51,24 +51,26 @@
     <h2>Master college</h2>
   </div>
   <div class="column2" style="background-color:white;">
-    <form action="/action_page.php"> <!-- need to change this to the actual form -->
+    <form action="/login" method="post"> <!-- need to change this to the actual form -->
       <label for="email">Email address</label>
       <br>
-      <input type="email" id="email" name="email" placeholder="student@school.edu" required><br>
+      <input type="email" id="email" name="email" placeholder="student@school.edu"><br>
       <br>
       <br>
       <label for="password">Password</label>
       <br>
-      <input type="password" id="password" name="password" required><br>
+      <input type="password" id="password" name="password"><br>
       <br>
-      <input type="submit" value="Sign In">
+      <input type="submit" name="signin" class="button" value="Sign In">
+      <br>
+      <input type="submit" name="signin" class="button" value="Create an Account">
     </form>
     <h3>OR</h3>
     <a href="https://accounts.google.com/b/1/AddMailService" class="button"><i class='fab fa-google' style='font-size:25px'></i> Sign In with Google</a>
     <br>
     <a href="https://www.facebook.com/" class="button"><i class='fab fa-facebook-square' style='font-size:28px'></i> Sign In with Facebook</a>
     <br>
-    <h3>Don't have an account? <a href="Link to Create Account page">Create one</a></h3>  <!-- need to change this to the actual link -->
+    <!-- <h3>Don't have an account? <a href="/create-account">Create one</a></h3> need to change this to the actual link -->
   </div>
 </div>
 

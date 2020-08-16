@@ -1,0 +1,128 @@
+.grid-container{
+  display: grid;
+  grid-column-gap: 50 px;
+}
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.item2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+input[type=submit] {
+  background-color: #5e0000; /* Autumn background */
+  border: 1px solid black; /* Black border */
+  color: white; /* White text */
+  padding: 7px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 50%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  margin:10 auto;
+  border-radius: 8px;
+}
+input[type=submit]:hover{
+  background-color: #890a0a;
+}
+
+.btn-group button {
+  background-color: #5e0000; /* Autumn background */
+  border: 1px solid black; /* Black border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 50%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  margin:10 auto;
+  border-radius: 8px;
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #890a0a;
+}
+
+h1{
+  font-family: 'flamenco';
+  color:white;
+  width: 90%;
+  height: 100%;
+  margin:20% 30%;
+}
+
+h2{
+  display: block;
+  font-family: 'flamenco';
+  text-align: left;
+  color:black;
+  margin:12px 22%;
+
+}
+
+label{
+  font-family: 'flamenco';
+  line-height: 2;
+}
+input{
+  display: block;
+  line-height: 2;
+  width:48%;
+  border-radius: 8px;
+}
+
+body{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(to top right, #7c0511, #bc2930, #e18437);
+  background-color: #FFFFFF;
+  background-size: 50% 100%;
+}
+
+.btn-group2 button {
+  background-color: #FFFFFF; /* White background */
+  border: 1px solid black; /* Black border */
+  color: black; /* Black text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 50%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  margin:10 auto;
+  border-radius: 8px; /* Rounded corners */
+
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1004px-Google_%22G%22_Logo.svg.png);
+background-repeat: no-repeat;
+background-position: 32% 50%;
+background-size: 5% 62%;
+}
+
+/* Add a background color on hover */
+.btn-group2 button:hover {
+  background-color: #c9c9c9;
+}
+
+.btn-group3 button {
+  background-color: #FFFFFF; /* Autumn background */
+  border: 1px solid black; /* Black border */
+  color: black; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 50%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  margin:10 auto;
+  border-radius: 8px;
+
+  background-image: url(https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png);
+background-repeat: no-repeat;
+background-position: 29% 50%;
+background-size: 8% 70%;
+}
+
+/* Add a background color on hover */
+.btn-group3 button:hover {
+  background-color: #c9c9c9;
+}
