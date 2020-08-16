@@ -1,0 +1,29 @@
+h2{
+  display: block;
+  font-family: 'flamenco';
+  text-align: center;
+  color:black;
+  margin:12px 22%;
+
+}
+
+.btn-group button {
+  background-image: linear-gradient(to top right, #7c0511, #bc2930, #e18437); /* Green background */
+  border: 1px red; /* Green border */
+  color: white; /* White text */
+  font-family: 'flamenco';
+  padding: 20px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 30%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  margin:0 auto;  
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #890a0a;
+}
