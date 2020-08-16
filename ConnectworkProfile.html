@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<html lang="en-us">
+<link rel="stylesheet" href="ConnectworkProfile.css"</link> <!-- Connects the css to this html file -->
+<link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet'> <!-- For the Google font "Flamenco" -->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- For icons -->
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Connectwork.com</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three columns that floats next to each other */
+.columnL {
+  float: left;
+  width: 20%;
+  height: 770px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.columnC {
+  float: left;
+  width: 30%;
+  height: 770px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.columnR {
+  float: left;
+  width: 50%;
+  height: 770px;
+  padding-top: 30px;
+  text-align: right;
+  padding-right: 40px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="columnL" style="background-image: linear-gradient(to top right,#5e0000ff, #b10f2eff, #e69138ff);">
+    <h1>Connectwork</h1>
+  </div>
+
+  <div class="columnC" style="background-color:white;">
+    <h2>My Profile</h2>
+    <img src="https://images.unsplash.com/photo-1520635360276-79f3dbd809f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80" alt="ProfilePhoto">
+    <br>
+    <h3>Change Photo</h3>
+
+  </div>
+
+  <div class="columnR" style="background-color:white;">
+    <form action="/action_page.php"> <!-- need to change this to the actual form -->
+      <label for="name">Full Name</label>
+      <input type="name" id="name" name="name">
+      <br><br><br>
+
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" placeholder="student@school.edu">
+      <br><br><br>
+
+      <label for="campus">Campus</label>
+      <select id="campus" name="campus">
+        <option value="UC Berkeley">UC Berkeley</option>
+        <option value="UC Davis">UC Davis</option>
+        <option value="Texas University">Texas University</option>
+        <option value="University of Hawaii">University of Hawaii</option>
+        <option value="UCLA">UCLA</option>
+    	  <option value="Cal State Fresno">Cal State Fresno</option>
+        <option value="Cal Poly Pomona">Cal Poly Pomona</option>
+      </select>
+      <br><br><br>
+
+      <label for="grade">Grade Level</label>
+      <select id="grade" name="grade">
+        <option value="first year">first year</option>
+        <option value="second year">second year</option>
+        <option value="third year">third year</option>
+        <option value="fourth year">fourth year</option>
+        <option value="fifth year or above">fifth year or above</option>
+      </select>
+      <br><br><br>
+
+      <label for="major">Major</label>
+      <select id="major" name="major">
+        <optgroup label="Computer Science">
+          <option value="101-Data Structures">Data Structures</option>
+          <option value="1-Intro to Programming">Intro to Programming</option>
+        </optgroup>
+        <optgroup label="Art">
+          <option value="1-Art Forms">1-Art Forms</option>
+          <option value="2-Design">2-Design</option>
+          <option value="3-Drawing">3-Drawing</option>
+        </optgroup>
+        <optgroup label="Biology">
+          <option value="1A-Animal Science">1A-Animal Science</option>
+          <option value="1B-Plant Science">1B-Plant Science</option>
+          <option value="2-Life Science">2-Life Science</option>
+        </optgroup>
+        <optgroup label="Math">
+          <option value="40-Algebra">40-Algebra</option>
+          <option value="45-Pre Calculus">45-Pre Calculus</option>
+          <option value="60-Calculus">60-Calculus</option>
+        </optgroup>
+        <optgroup label="English">
+          <option value="10-Literature">10-Literature</option>
+          <option value="20A-Grammar I">20A-Grammar I</option>
+          <option value="20B-Grammar II">20B-Grammar II</option>
+        </optgroup>
+       </select>
+       <br><br><br>
+
+      <label for="club">Clubs/Orgs</label>
+      <select id="club" name="club">
+        <option value="Robotics">Robotics</option>
+        <option value="Music">Music</option>
+        <option value="Dance">Dance</option>
+        <option value="Swim">Swim</option>
+        <option value="Chess">Chess</option>
+        <option value="Math">Math</option>
+        <option value="Rowing">Rowing</option>
+      </select>
+      <br><br><br>
+
+      <label for="can">I can help with...</label>
+      <select id="major" name="major">
+        <optgroup label="Computer Science">
+          <option value="101-Data Structures">Data Structures</option>
+          <option value="1-Intro to Programming">Intro to Programming</option>
+        </optgroup>
+        <optgroup label="Art">
+          <option value="1-Art Forms">1-Art Forms</option>
+          <option value="2-Design">2-Design</option>
+          <option value="3-Drawing">3-Drawing</option>
+        </optgroup>
+        <optgroup label="Biology">
+          <option value="1A-Animal Science">1A-Animal Science</option>
+          <option value="1B-Plant Science">1B-Plant Science</option>
+          <option value="2-Life Science">2-Life Science</option>
+        </optgroup>
+        <optgroup label="Math">
+          <option value="40-Algebra">40-Algebra</option>
+          <option value="45-Pre Calculus">45-Pre Calculus</option>
+          <option value="60-Calculus">60-Calculus</option>
+        </optgroup>
+        <optgroup label="English">
+          <option value="10-Literature">10-Literature</option>
+          <option value="20A-Grammar I">20A-Grammar I</option>
+          <option value="20B-Grammar II">20B-Grammar II</option>
+        </optgroup>
+       </select>
+       <br><br><br>
+
+      <label for="need">I need help with...</label>
+      <select id="major" name="major">
+        <optgroup label="Computer Science">
+          <option value="101-Data Structures">Data Structures</option>
+          <option value="1-Intro to Programming">Intro to Programming</option>
+        </optgroup>
+        <optgroup label="Art">
+          <option value="1-Art Forms">1-Art Forms</option>
+          <option value="2-Design">2-Design</option>
+          <option value="3-Drawing">3-Drawing</option>
+        </optgroup>
+        <optgroup label="Biology">
+          <option value="1A-Animal Science">1A-Animal Science</option>
+          <option value="1B-Plant Science">1B-Plant Science</option>
+          <option value="2-Life Science">2-Life Science</option>
+        </optgroup>
+        <optgroup label="Math">
+          <option value="40-Algebra">40-Algebra</option>
+          <option value="45-Pre Calculus">45-Pre Calculus</option>
+          <option value="60-Calculus">60-Calculus</option>
+        </optgroup>
+        <optgroup label="English">
+          <option value="10-Literature">10-Literature</option>
+          <option value="20A-Grammar I">20A-Grammar I</option>
+          <option value="20B-Grammar II">20B-Grammar II</option>
+        </optgroup>
+       </select>
+       <br><br><br>
+
+      <label for="interest">I'm interested in...</label>
+      <select id="interest" name="interest">
+        <option value="Gaming">Gaming</option>
+        <option value="Dancing">Dancing</option>
+        <option value="Public Speaking">Public Speaking</option>
+        <option value="Debating">Debating</option>
+        <option value="Art">Art</option>
+    	  <option value="Anime">Anime</option>
+        <option value="Cooking">Cooking</option>
+      </select>
+      <br><br><br>
+      <input type="submit" value="Update">
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

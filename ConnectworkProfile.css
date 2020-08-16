@@ -1,0 +1,96 @@
+/* for all of the text in the body */
+body {
+  font-family: "Flamenco";
+}
+
+/* for the title Connectwork */
+h1 {
+  font-size: 25px;
+  color: white;
+}
+
+h2 {
+  font-size: 40px;
+  color: black;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 20px;
+  color: black;
+  font-weight: normal;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+input[type=submit] {
+  background-color: #5e0000ff; /* burgundy color for the button */
+  font-family: "Flamenco";
+  font-size: 15px;
+  color: white; /* font color */
+  padding: 16px; /* adds padding to the top and bottom of the text */
+  border-radius: 8px; /*rounds the corners of the button */
+  width: 20%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+label[for="name"] {
+  padding-right: 145px;
+}
+
+label[for="email"] {
+  padding-right: 114px;
+}
+
+label[for="campus"] {
+  padding-right: 160px;
+}
+
+label[for="grade"] {
+  padding-right: 130px;
+}
+
+label[for="major"] {
+  padding-right: 176px;
+}
+
+label[for="club"] {
+  padding-right: 131px;
+}
+
+label[for="can"] {
+  padding-right: 95px;
+}
+
+label[for="need"] {
+  padding-right: 85px;
+}
+
+label[for="interest"] {
+  padding-right: 80px;
+}
+
+input {
+  font-family: "Flamenco";
+  padding: 10px;
+  width: 60%;
+  font-size: 20px;
+  border-radius: 8px; /*rounds the corners of the button */
+  border-width: thin;
+}
+
+select {
+  font-family: "Flamenco";
+  padding: 10px;
+  width: 60%;
+  font-size: 15px;
+  border-radius: 8px; /*rounds the corners of the button */
+}
