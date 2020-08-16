@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<html lang="en-us">
+<link rel="stylesheet" href="ConnectworkLogin.css"</link> <!-- Connects the css to this html file -->
+<link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet'> <!-- For the Google font "Flamenco" -->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- For icons -->
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Connectwork.com</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 50%;
+  height: 770px;
+  padding-left: 100px;
+  padding-top: 200px;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  height: 770px;
+  text-align: center;
+  padding-top: 70px;
+  font-size: 25px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column1" style="background-image: linear-gradient(to top right,#5e0000ff, #b10f2eff, #e69138ff);">
+    <h1>Create</h1>
+    <h1>your</h1>
+    <h1>account</h1>
+  </div>
+  <div class="column2" style="background-color:white;">
+    <form action="/action_page.php"> <!-- need to change this to the actual form -->
+      <label for="name">Full Name</label>
+      <br>
+      <input type="name" id="name" name="name" placeholder="Full Name" required><br>
+      <br>
+      <label for="email">Email address</label>
+      <br>
+      <input type="email" id="email" name="email" placeholder="student@school.edu" required><br>
+      <br>
+      <label for="password">Password</label>
+      <br>
+      <input type="password" id="password" name="password" required><br>
+      <br>
+      <input type="submit" value="Sign In">
+    </form>
+    <h3>OR</h3>
+    <a href="https://accounts.google.com/b/1/AddMailService" class="button"><i class='fab fa-google' style='font-size:25px'></i> Sign In with Google</a>
+    <br>
+    <a href="https://www.facebook.com/" class="button"><i class='fab fa-facebook-square' style='font-size:28px'></i> Sign In with Facebook</a>
+    <br>
+    <h3>Don't have an account? <a href="Link to Create Account page">Create one</a></h3>  <!-- need to change this to the actual link -->
+  </div>
+</div>
+
+</body>
+</html>
