@@ -1,0 +1,92 @@
+<style>
+.content {
+  margin: auto;
+}
+* {
+  box-sizing: border-box;
+}
+h1{
+	color: white;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #f04c32;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 10px;
+  height: 100px;
+  background-image: linear-gradient(to right, darkred , orange);
+}
+
+.column {
+  width: 50%;
+  padding: 20px;
+  margin: auto;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+<body>
+
+<div class="content">
+
+	<div class="container">
+  <div style="text-align:center">
+    <h1>Wellness Connection</h1>
+    <p></p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <form action="/wellness_page" method="post">
+        <label for="topic">I would like to talk about...</label>
+        <input type="text" id="topic" name="talk" placeholder="literally anything.."> <br>
+        <label for="who">with a </label>
+        <select id="person" name="who">
+          <option value="ucb">Counselor</option>
+          <option value="calp">Student </option>
+        </select>
+        <label for="at">at </label>
+        <select id="uni" name="uni">
+          <option value="ucb">UC Berkeley</option>
+          <option value="calp">Cal Poly </option>
+          <option value="fs">Fresno State</option>
+        </select> <br>
+        <label for="comment">Additional Comments:</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea> <br>
+        <input type="submit" class="button" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+</body>

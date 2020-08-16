@@ -1,0 +1,44 @@
+<!--This is a sample, edit profile page-->
+
+<html>
+
+  <h1>Edit Profile Form</h1>
+  <form action="/edit_profile" method="post">
+    <input type="text" name="email" id="email" placeholder="Email Address" />
+    <br>
+    <input type="text" name="fullname" id="fullname" placeholder="First Name" />
+    <br>
+    <input type="text" placeholder="Last Name" />
+    <br>
+    <textarea placeholder="Bio" /></textarea>
+    <br>
+    <input type="number" name="gradyear" id="gradyear" placeholder="Graduation Year" />
+    <br>
+    <select name="campus" id="campus">
+      {%for campus in campuses%}
+        <option value="{{campus}}">{{campus}}</option>
+      {%endfor%}
+    </select>
+    <br>
+    <select name="major" id="major">
+      {%for major in majors%}
+        <option value="{{major}}">{{major}}</option>
+      {%endfor%}
+    </select>
+    <br>
+    <select name="canhelp" id="canhelp">
+      {%for class in classes%}
+        <option value="{{class}}">{{class}}</option>
+      {%endfor%}
+    </select>
+    <br>
+    <select name="needhelp" id="needhelp">
+      {%for class in classes%}
+        <option value="{{class}}">{{class}}</option>
+      {%endfor%}
+    </select>
+    <br>
+    <input type="submit" class="button" value="Update Profile" />
+  </form>
+
+</html>

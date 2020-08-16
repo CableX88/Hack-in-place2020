@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<html lang="en-us">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/ConnectworkLogin.css') }}"> <!-- Connects the css to this html file -->
+<link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet'> <!-- For the Google font "Flamenco" -->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- For icons -->
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Connectwork.com</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 50%;
+  height: 770px;
+  padding-left: 100px;
+  padding-top: 200px;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  height: 770px;
+  text-align: center;
+  padding-top: 70px;
+  font-size: 25px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column1" style="background-image: linear-gradient(to top right,#5e0000ff, #b10f2eff, #e69138ff);">
+    <h1>Connectwork</h1>
+    <h2>Meet people</h2>
+    <h2>Make connections</h2>
+    <h2>Master college</h2>
+  </div>
+  <div class="column2" style="background-color:white;">
+    <form action="/login" method="post"> <!-- need to change this to the actual form -->
+      <label for="email">Email address</label>
+      <br>
+      <input type="email" id="email" name="email" placeholder="student@school.edu"><br>
+      <br>
+      <br>
+      <label for="password">Password</label>
+      <br>
+      <input type="password" id="password" name="password"><br>
+      <br>
+      <input type="submit" name="signin" class="button" value="Sign In">
+      <br>
+      <input type="submit" name="signin" class="button" value="Create an Account">
+    </form>
+    <h3>OR</h3>
+    <a href="https://accounts.google.com/b/1/AddMailService" class="button"><i class='fab fa-google' style='font-size:25px'></i> Sign In with Google</a>
+    <br>
+    <a href="https://www.facebook.com/" class="button"><i class='fab fa-facebook-square' style='font-size:28px'></i> Sign In with Facebook</a>
+    <br>
+    <!-- <h3>Don't have an account? <a href="/create-account">Create one</a></h3> need to change this to the actual link -->
+  </div>
+</div>
+
+</body>
+</html>

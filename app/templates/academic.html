@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href= "{{ url_for('static',filename='styles/academic.css') }}" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet'>
+    <h1> Academic Connection </h1>
+</head>
+
+<body>
+    <b1>
+    <form action="\academic" method="post">
+        <br><br>
+        <label for="subject">I need help with... </label>
+        <select id="subject" name="subject">
+          <option value="compsci101">Data Structures</option>
+          <option value="compsci1">Intro to Programming</option>
+          <option value="art1">Art Forms</option>
+          <option value="art2">Designs</option>
+          <option value="art3">Drawing</option>
+          <option value="bio1a">Animal Science</option>
+          <option value="bio1b">Plant Science</option>
+          <option value="bio2">Life Science</option>
+          <option value="math">Math</option>
+          <option value="english">English</option>
+        </select>
+
+        <label for="grade"><br><br>from a</label>
+        <select id="grade" name="grade">
+          <option value="senior">Senior</option>
+          <option value="junior">Junior</option>
+          <option value="soph">Sophmore</option>
+          <option value="fresh">Freshman</option>
+          <option value="anygrade">Any</option>
+        </select>
+
+        <label for="major">with a major in</label>
+        <select id="major" name="major">
+          <option value="compsci">Computer Science</option>
+          <option value="art">Art</option>
+          <option value="bio">Biology</option>
+          <option value="math">Math</option>
+          <option value="english">English</option>
+        </select>
+
+        <label for="campus"><br><br>at</label>
+        <select id="campus" name="campus">
+          <option value="ucb">UC Berkeley</option>
+          <option value="ucd">UC Davis</option>
+          <option value="texasuni">Texas University</option>
+          <option value="hawaiiuni">University of Hawaii</option>
+          <option value="ucla">UCLA</option>
+          <option value="calfresno">Cal State Fresno</option>
+          <option value="calpoly">Cal Poly Pomona</option>
+        </select>
+
+        <br><br>
+      
+        <input type="submit" class="button" value="Connect Me!"/>
+       </form>
+    </b1>
+</body>
+
+
+</html>
