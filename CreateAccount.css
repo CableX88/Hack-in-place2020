@@ -67,6 +67,7 @@ h2{
 label{
   font-family: 'flamenco';
   line-height: 2;
+  font-weight: bold;
 }
 input{
   display: block;

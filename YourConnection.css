@@ -52,13 +52,13 @@ h2{
   text-align: left;
   color:black;
   margin:12px 22%;
-
 }
 
 label{
   font-family: 'flamenco';
   line-height: 3;
   margin:20% 35%;
+  font-weight: bold;
 }
 input{
   display: block;
