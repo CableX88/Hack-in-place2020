@@ -1,5 +1,6 @@
 from flask import render_template
 from app import app
+from flask import request
 
 @app.route('/', methods=['POST','GET'])
 @app.route('/login', methods=['POST','GET'])
@@ -16,7 +17,7 @@ def index():
 
 @app.route('/my-profile', methods=['POST', 'GET'])
 def my_profile():
-	pass
+	if 
 
 @app.route('/academic', methods=['POST', 'GET'])
 def academic():
