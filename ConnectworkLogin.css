@@ -36,6 +36,8 @@ input[type=email] {
   padding: 10px;
   width: 70%;
   font-size: 20px;
+  border-radius: 8px; /*rounds the corners of the button */
+  border-width: thin;
 }
 
 input[type=password] {
@@ -43,6 +45,17 @@ input[type=password] {
   padding: 10px;
   width: 70%;
   font-size: 20px;
+  border-radius: 8px; /*rounds the corners of the button */
+  border-width: thin;
+}
+
+input[type=name] {
+  font-family: "Flamenco";
+  padding: 10px;
+  width: 70%;
+  font-size: 20px;
+  border-radius: 8px; /*rounds the corners of the button */
+  border-width: thin;
 }
 
 input[type=submit] {
